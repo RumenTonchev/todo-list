@@ -1,0 +1,7 @@
+<div (click)="activeClick()">
+  {{item.id}}: {{item.name}}
+</div>
+<div *ngIf="item.active">
+  {{item.description}}
+  <button (click)="openEdit()">open edit</button>
+</div>

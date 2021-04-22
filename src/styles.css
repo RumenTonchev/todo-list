@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  flex-direction: column;
+}
+
+.container > div:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.container > div:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.container > div {
+  margin: 0 5px;
+  background: #e5d7d7;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 10;
+}
+
+.container > div.is-odd {
+  background: #c6b9b9;
+}
+
+
+.container > div.is-active {
+  background: #111111;
+  color: #fefefe;
+}
+
+input.ng-invalid.ng-touched {
+  border-color: orangered;
+}
